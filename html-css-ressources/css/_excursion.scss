@@ -1,0 +1,41 @@
+.banner{
+    background-image: url('../img/banner-riu-hotel.jpg');
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+video{
+    margin: 0 auto;
+}
+
+
+.flex-container-aside{
+    display: block;
+}
+.flex-container-aside img{
+    margin-top: 1%;
+    border-top: 2px solid black;
+}
+
+@media screen and (min-width:1024px) {
+    .banner{
+        background-image: url('../img/banner-riu-hotel.jpg');
+    }
+    .flex-container-aside{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+    .flex-container-aside article{
+        border-top: 2px solid black;
+    }
+}
+
+
+
+
+article img{
+    width: 100%;
+    height: auto;
+}

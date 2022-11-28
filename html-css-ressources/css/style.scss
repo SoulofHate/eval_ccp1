@@ -1,0 +1,174 @@
+$body-color: #222;
+$primary-color: #34C6DD;
+$secondary-color:#E11f8f;
+$hyper-color: royalblue;
+
+@import './_index.scss';
+@import './excursion';
+@import './contact';
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+h2{
+    color: $primary-color;
+}
+
+@mixin container{
+    width: 90%;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.container{
+    @include container;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.container-xl{
+    @include container;
+    max-width: 1400px;
+}
+
+@mixin h{
+    line-height: normal;
+    font-weight: 500;
+    text-align: center
+}
+
+h1{
+    @include h;
+    font-size: 3rem;
+}
+h2{
+    @include h;
+    font-size: 2.5rem;
+}
+h3{
+    @include h;
+    font-size: 2rem;
+}
+
+nav{
+    font-family: 'Bree Serif',serif;
+}
+nav a{
+    color:$primary-color;
+    text-decoration: none;
+}
+nav a:hover{
+    text-decoration: underline;
+    color: $secondary-color;
+}
+
+a{text-decoration: none;}
+
+
+nav {
+    margin-bottom: 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1em 0.5em;
+}
+
+.navbar a {
+    display: block;
+}
+
+.navbar-brand {
+    flex-basis: 60%;
+}
+
+#navbar-toggle {
+    flex-basis: 40%;
+    max-width: 80px;
+    border: 0;
+    border-radius: 5px;
+    /*padding: 0.5em 1em;*/
+    background-color: #34C6DD;
+    text-align: center;
+}
+
+#navbar-collapse {
+    display: none;
+}
+
+#navbar-collapse a {
+    margin: 1em;
+}
+
+#navbar-collapse.visible {
+    display: block;
+    flex-basis: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        flex-basis: 30%;
+    }
+
+    #navbar-toggle {
+        display: none;
+    }
+
+    #navbar-collapse {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      #navbar-collapse a{
+        flex-basis: 20%;
+      }
+}
+
+@media print {
+    nav {
+        display: none;
+    }
+}
+
+#navbar-collapse a {
+    color: #34C6DD;
+    font-size: 1.4rem;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+main section{
+    margin: 2em;    
+}
+
+footer{
+    color:white;
+    background-color: #777;  
+    text-align: center;
+}
+footer a{
+    display: block;
+    height: 100px;
+    margin:0;
+}
+#contact{
+    background-color: $primary-color;
+}

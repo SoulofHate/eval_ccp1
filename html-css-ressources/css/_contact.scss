@@ -1,0 +1,31 @@
+h1{
+    color: $secondary-color;
+}
+
+.req{
+    color:red;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2%;
+    row-gap: 4%;
+}
+fieldset{
+    flex-basis: 45%;
+}
+input,label{
+    display: block;
+}
+button{
+    flex-basis: 60%;
+}
+
+.date{
+    display: inline;
+    width: 30%;
+}
+address a{
+    display: block;
+}

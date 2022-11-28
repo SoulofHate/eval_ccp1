@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Montserrat&display=swap");
+.banner-index {
+  background-image: url("../img/hotel-miami-beach.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2%;
+  margin: 0 auto;
+}
+
+.grid-container-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 2%;
+}
+
+.grid-container-4 figure {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 2%;
+  }
+  .grid-container-4 {
+    grid-template-columns: 20% 20% 20% 20%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .grid-container-4 {
+    grid-template-columns: 40% 40%;
+  }
+}
+.grid-container img {
+  width: 100%;
+}
+
+.grid-container p {
+  position: relative;
+  top: -50%;
+  left: 20%;
+  color: white;
+}
+
+#sejour, #vacance, #themes {
+  height: 100%;
+}
+
+#chambre {
+  background-color: rgba(52, 198, 211, 0.2);
+}
+
+#chambre div {
+  width: 90%;
+  height: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+figcaption {
+  color: #E11f8f;
+}
+
+article > a:not(#contact) {
+  color: white;
+  background-color: #E11f8f;
+  width: 100%;
+  height: 8%;
+  padding-top: 4%;
+  display: block;
+  border-radius: 4%;
+  text-align: center;
+  text-decoration: none;
+}
+
+#visite p {
+  text-align: center;
+}
+
+section:not(#contact) {
+  margin-bottom: 4%;
+  display: block;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+.banner-index h1 {
+  color: white;
+}
+
+.flex-addr {
+  display: flex;
+  flex-basis: 30%;
+  justify-content: space-around;
+}
+
+#contact a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+#visite div {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#visite article img {
+  width: 100%;
+}
+
+.banner {
+  background-image: url("../img/banner-riu-hotel.jpg");
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+video {
+  margin: 0 auto;
+}
+
+.flex-container-aside {
+  display: block;
+}
+
+.flex-container-aside img {
+  margin-top: 1%;
+  border-top: 2px solid black;
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    background-image: url("../img/banner-riu-hotel.jpg");
+  }
+  .flex-container-aside {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+  .flex-container-aside article {
+    border-top: 2px solid black;
+  }
+}
+article img {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  color: #E11f8f;
+}
+
+.req {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  -moz-column-gap: 2%;
+       column-gap: 2%;
+  row-gap: 4%;
+}
+
+fieldset {
+  flex-basis: 45%;
+}
+
+input, label {
+  display: block;
+}
+
+button {
+  flex-basis: 60%;
+}
+
+.date {
+  display: inline;
+  width: 30%;
+}
+
+address a {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5em;
+}
+
+h2 {
+  color: #34C6DD;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.container-xl {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+h1 {
+  line-height: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  line-height: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h3 {
+  line-height: normal;
+  font-weight: 500;
+  text-align: center;
+  font-size: 2rem;
+}
+
+nav {
+  font-family: "Bree Serif", serif;
+}
+
+nav a {
+  color: #34C6DD;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #E11f8f;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-bottom: 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1em 0.5em;
+}
+
+.navbar a {
+  display: block;
+}
+
+.navbar-brand {
+  flex-basis: 60%;
+}
+
+#navbar-toggle {
+  flex-basis: 40%;
+  max-width: 80px;
+  border: 0;
+  border-radius: 5px;
+  /*padding: 0.5em 1em;*/
+  background-color: #34C6DD;
+  text-align: center;
+}
+
+#navbar-collapse {
+  display: none;
+}
+
+#navbar-collapse a {
+  margin: 1em;
+}
+
+#navbar-collapse.visible {
+  display: block;
+  flex-basis: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .navbar-brand {
+    flex-basis: 30%;
+  }
+  #navbar-toggle {
+    display: none;
+  }
+  #navbar-collapse {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  #navbar-collapse a {
+    flex-basis: 20%;
+  }
+}
+@media print {
+  nav {
+    display: none;
+  }
+}
+#navbar-collapse a {
+  color: #34C6DD;
+  font-size: 1.4rem;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+main section {
+  margin: 2em;
+}
+
+footer {
+  color: white;
+  background-color: #777;
+  text-align: center;
+}
+
+footer a {
+  display: block;
+  height: 100px;
+  margin: 0;
+}
+
+#contact {
+  background-color: #34C6DD;
+}/*# sourceMappingURL=style.css.map */
